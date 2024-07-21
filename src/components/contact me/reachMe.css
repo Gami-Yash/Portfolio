@@ -75,6 +75,7 @@
     gap: 10px;
     margin-top: 10px;
     margin-left: 120px;
+    
 }
 
 .email-button {
@@ -160,6 +161,7 @@
     .email-container {
         justify-content: center;
         margin-left: 0;
+        margin-bottom: 200px;
     }
 }
 

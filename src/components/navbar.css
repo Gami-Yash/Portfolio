@@ -223,12 +223,8 @@ button:focus {
     transition: color 0.3s ease;
   }
 
-  nav ul li button:hover {
-    color: #4169E1;
-  }
 
   .resume-button {
-    background-color: #4169E1;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
