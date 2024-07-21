@@ -73,7 +73,7 @@ const Navbar = () => {
                       // Create a link element
                       const link = document.createElement('a');
                       link.href = '/GamiYashResume.pdf';
-                      link.download = 'GamiYashResume.pdf'; // Set download attribute
+                      link.target='_blank'
 
                       // Append link to the body and trigger click
                       document.body.appendChild(link);
