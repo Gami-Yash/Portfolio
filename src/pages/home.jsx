@@ -27,7 +27,7 @@ const Home = () => {
   const projects = [
     {
       title: 'Library Management System',
-      description: "I Developed a Library Management Application for Odoo Combat 2024 using MERN stack. Focused on backend development, it efficiently manages book inventories, tracks borrowed items, and handles user accounts. The app features a user-friendly interface and robust data management for improved library operations.",
+      description: "I Developed a Library Management Application for Finals Odoo Combat 2024 using MERN stack. Focused on backend development, it efficiently manages book inventories, tracks borrowed items, and handles user accounts. The app features a user-friendly interface and robust data management for improved library operations.",
       technologies: ['Node','React','Express','Figma','MongoDB'],
       githubLink: 'https://github.com/Gami-Yash/LibManagement',
       imageUrl: LibraryManagement,
