@@ -19,7 +19,7 @@ const ReachMe = () => {
           <img src={teamSVG} alt="Team SVG" className="team-image" />
         </div>
         <div className="right-content">
-          <p>We are always ready to collaborate and bring your ideas to life.</p>
+          <p>I am always ready to collaborate and bring your ideas to life.</p>
           <p>Feel free to reach out for any project discussions or queries.</p>
           <div className="email-container">
             <button 
