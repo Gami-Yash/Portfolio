@@ -70,7 +70,7 @@ const ProjectCard = ({ title, description, technologies, demoLink, imageUrl }) =
         ))}
       </div>
       <a href={demoLink} target="_blank" rel="noopener noreferrer" className="demo-button">
-        Demo <span className="arrow">→</span>
+        GitHub Link <span className="arrow">→</span>
       </a>
     </div>
   );
