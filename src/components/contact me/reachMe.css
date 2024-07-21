@@ -1,0 +1,180 @@
+.contact-me-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    padding: 40px; 
+    margin-top: 40px; 
+}
+
+.contact-me-container h2 {
+    font-size: 30px; 
+    margin-top: 80px; 
+    margin-bottom: 20px; 
+    color: #000000; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+}
+
+.contact-me-container.dark h2 {
+    color: #ffffff; 
+}
+
+.contact-me-container.light h2 {
+    color: #000000; 
+}
+
+.contact-me-content {
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.left-content {
+    flex-shrink: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    order: 1; 
+}
+
+.left-content .team-image {
+    width: 100%; 
+    max-width: 450px; 
+    height: auto; 
+}
+
+.right-content {
+    flex: 1; 
+    text-align: left; 
+    padding: 20px; 
+    margin-top: -160px;
+    order: 2; 
+}
+
+.right-content p {
+    font-size: 20px; 
+    margin-bottom: 20px; 
+}
+
+.contact-me-container.dark .right-content p {
+    color: #ffffff; 
+}
+
+.contact-me-container.light .right-content p {
+    color: #000000; 
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+.email-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.email-button.dark {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.email-button.light {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.email-button:hover {
+    opacity: 0.8;
+}
+
+.send-mail-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #ffffff !important;
+    background-color: #007bff !important;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-mail-button:hover {
+    background-color: #0056b3 !important;
+    transform: scale(1.05);
+}
+
+.send-mail-button:active {
+    background-color: #004494 !important;
+}
+
+.contact-me-container.dark .send-mail-button {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+.contact-me-container.light .send-mail-button {
+    color: #ffffff; 
+    background-color: #000000; 
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-me-container {
+        padding: 20px; 
+    }
+
+    .contact-me-content {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .left-content, .right-content {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .contact-me-container h2 {
+        font-size: 28px; 
+        margin-top: 40px; 
+    }
+
+    .right-content {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .email-container {
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-me-container h2 {
+        font-size: 24px; 
+        margin-top: 20px; 
+    }
+
+    .right-content p {
+        font-size: 18px; 
+    }
+
+    .email-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,62 @@
+.social-icons {
+  display: flex;
+  gap: 40px;
+  align-items: center; 
+}
+
+@media (max-width: 767px) { 
+  .social-icons {
+    margin-top: 30px;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+}
+.social-icons {
+  display: flex;
+  gap: 40px;
+  align-items: center; 
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+@media (max-width: 767px) { 
+  .social-icons {
+    margin-top: 30px;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+}
+
+.social-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease, stroke 0.3s ease, fill 0.3s ease;
+  text-decoration: none; /* Ensure no default underline */
+  padding: 10px; /* Add padding to make the clickable area larger */
+}
+
+.social-icons .icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--icon-fill-color);
+  stroke: var(--icon-border-color);
+  stroke-width: 1px;
+}
+
+.social-icons a:hover .icon {
+  transform: scale(1.1);
+  stroke: var(--icon-hover-border-color);
+  fill: var(--icon-hover-fill-color); 
+}
+
+.light {
+  --icon-border-color: black;
+  --icon-fill-color: black;
+  --icon-hover-fill-color: #87CEEB; 
+}
+
+.dark {
+  --icon-border-color: white;
+  --icon-fill-color: white;
+  --icon-hover-fill-color: #87CEEB; 
+}

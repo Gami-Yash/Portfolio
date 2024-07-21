@@ -1,0 +1,137 @@
+:root{
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+.text-light-theme {
+  color: var(--text-light);
+}
+.text-dark-theme {
+  color: var(--text-dark);
+}
+body .text-dark-theme {
+  color: var(--text-dark);
+}
+
+.home-container {
+  position: relative;
+  top: 100px;
+  height: 100vh;
+}
+
+.content-container {
+  position: absolute;
+  top: 180px;
+  left: 200px;
+  text-align: left;
+}
+
+.main-typing-container {
+  margin-top: 20px;
+}
+
+.social-icons-container {
+  margin-top: 80px;
+}
+
+.scroll-button-container {
+  position: absolute;
+  top: 250px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  animation: bounce 2s infinite; 
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-30px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-15px);
+  }
+}
+
+.projects-header {
+  font-size: 30px;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 190px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about {
+  font-size: 30px;
+  color: var(--text-light);
+  text-align: center;
+  margin: 10px 0 -70px; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-dark{
+  font-size: 30px;
+  color: var(--text-dark);
+  text-align: center;
+  margin: 10px 0 -70px; 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-me-container {
+  margin-top: 20px; 
+}
+
+.image-card-container {
+  position: absolute; 
+  right: 200px;
+  top: 240px; 
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    font-size: 28px; 
+    margin: 20px 0 10px; 
+  }
+
+  .content-container {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+.social-icons-container {
+  margin-top: -350px;
+  padding-left: 200px; /* Add space between icons and text */
+}
+
+.content-container {
+  position: absolute;
+  top: 180px;
+  left: 220px; /* Adjusted for padding */
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .social-icons-container {
+    margin-top: 120px;
+    margin-bottom: -80px;
+    padding-left: 10px; /* Add space between icons and text for smaller screens */
+  }
+
+  .content-container {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+
+

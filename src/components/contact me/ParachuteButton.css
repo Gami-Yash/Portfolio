@@ -1,0 +1,45 @@
+.parachute-button-container {
+    display: inline-block;
+    overflow: hidden; /* Ensure content doesn't spill out */
+  }
+  
+  .parachute-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .parachute-button .parachute-button-text {
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .parachute-button .parachute-button-icon {
+    position: absolute;
+    right: -50px; /* Initially outside the button */
+    transition: right 0.5s ease-in-out;
+    font-size: 24px; /* Increase icon size */
+  }
+  
+  .parachute-button:hover .parachute-button-text {
+    transform: translateX(150%); /* Move text completely outside */
+  }
+  
+  .parachute-button:hover .parachute-button-icon {
+    top: 10px;
+    right: 45px; /* Move the icon into view */
+  }
+  
+  .parachute-button:hover {
+    background-color: skyblue;
+    color: white;
+  }
+  

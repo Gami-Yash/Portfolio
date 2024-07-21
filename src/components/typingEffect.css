@@ -1,0 +1,42 @@
+.typing-effect {
+  display: inline-block; 
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center; 
+  font-size: 32px; 
+  width: 100%; 
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 15px; 
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .typing-effect {
+    margin-bottom: 10px;
+    white-space: normal; 
+    overflow: visible; 
+    font-size: 26px; 
+    width: 100vw; 
+    padding-left: 4vw; 
+    padding-right: 4vw;
+    box-sizing: border-box; 
+  }
+
+  .cursor {
+    width: 3px; 
+  }
+}
