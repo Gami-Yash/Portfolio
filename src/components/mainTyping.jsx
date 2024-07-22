@@ -11,7 +11,7 @@ const MainTyping = () => {
     "Ok....I am running out of ideas",
     "Uhhh....You can scroll down!",
     "You still here?",
-    "..... Ok I will restart the loop than"
+    "..... Ok I will restart the loop then"
   ];
 
   const textColor = '#FFFFFF'; 
