@@ -6,7 +6,6 @@ import ParticleHover from '../src/components/ParticleHover';
 import Navbar from '../src/components/navbar'; 
 import Home from '../src/pages/home'; 
 
-
 const App = () => {
   return (
     <ThemeProvider>
