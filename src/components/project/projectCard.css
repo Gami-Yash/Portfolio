@@ -1,7 +1,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This ensures the button is pushed to the bottom */
+  justify-content: space-between;
   border-radius: 12px;
   padding: 16px;
   max-width: 400px;

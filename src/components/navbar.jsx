@@ -70,17 +70,17 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={() => {
-                      // Create a link element
+                      
                       const link = document.createElement('a');
                       link.href = '/GamiYashResume.pdf';
                       link.target='_blank'
 
-                      // Append link to the body and trigger click
+                     
                       document.body.appendChild(link);
                       link.click();
                       document.body.removeChild(link);
 
-                      // Open the PDF in a new tab/window
+                     
                       window.open('public/GamiYashResume.pdf', '_blank');
                     }}
                     className="menu-link resume-button"

@@ -42,39 +42,38 @@ const Home = () => {
     {
       title: 'Crime Reporting System',
       description: "Built a real-time crime web app using the MERN stack, focusing on backend development and database creation. The app features live crime updates and efficient data management, providing a robust platform for monitoring and analyzing crime information.",
-      technologies: ['Node','React','Express','Figma','MongoDB'], // Add the relevant technologies
+      technologies: ['Node','React','Express','Figma','MongoDB'], 
       githubLink: 'https://github.com/Gami-Yash/CrimeReportingNew',
       imageUrl: CrimeReporting
     },
     {
       title: 'Blogging Platform',
       description: "Designed a blogging website using the MERN stack, handling backend and database creation. The site supports image uploads and features an integrated text editor for efficient post creation and management, offering a seamless blogging experience.",
-      technologies: ['Node','React','Express',,'MongoDB'], // Add the relevant technologies
+      technologies: ['Node','React','Express',,'MongoDB'], 
       githubLink: 'https://github.com/Gami-Yash/Blog-App',
       imageUrl: blog
     },
     {
       title: 'User Management System',
       description: "Created a user management system using Python and Django, focusing on backend development. The system handles user authentication, roles, and permissions, ensuring secure and efficient management of user accounts.",
-      technologies: ['Python','Django','SQLite3'], // Add the relevant technologies
+      technologies: ['Python','Django','SQLite3'], 
       githubLink: 'https://github.com/Gami-Yash/Django-Projects',
       imageUrl: FinalUser
     },
     {
       title: 'Student Management System',
       description: "Implemented a Student Management System using C++ and file management techniques to handle a large number of students. The system includes role-based authentication and various administrative features, ensuring efficient data management and streamlined operations.",
-      technologies: ['C++', 'File Management'], // Add the relevant technologies
+      technologies: ['C++', 'File Management'], 
       githubLink: 'https://github.com/Gami-Yash/StudentManagement',
       imageUrl: Student
     },
     {
       title: 'E-commerce Application',
       description: "Formed the frontend of an e-commerce application using Flutter, creating a responsive and user-friendly interface. The app features smooth navigation, product displays, and a seamless shopping experience for users.",
-      technologies: ['Dart','Flutter','FireBase','Android Studio'], // Add the relevant technologies
+      technologies: ['Dart','Flutter','FireBase','Android Studio'], 
       githubLink: 'https://github.com/Gami-Yash/eCommerce',
       imageUrl: FinalEcom
     },
-    // Other projects...
   ];
 
   return (
@@ -100,7 +99,7 @@ const Home = () => {
               key={index}
               title={project.title}
               description={project.description}
-              technologies={project.technologies} // Pass technologies array
+              technologies={project.technologies} 
               demoLink={project.githubLink}
               imageUrl={project.imageUrl}
             />

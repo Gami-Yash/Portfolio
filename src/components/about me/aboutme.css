@@ -30,7 +30,7 @@ body {
   background-color: var(--background-dark);
   color: var(--text-dark);
   border: 1px solid var(--border-dark);
-  box-shadow: var(--shadow-dark); /* Updated to use light shadow in dark mode */
+  box-shadow: var(--shadow-dark); 
 }
 
 .about-me-card.light {
@@ -68,7 +68,7 @@ body {
   margin-bottom: 20px;
   opacity: 0;
   transform: translateX(-100%);
-  transition: opacity 0.6s ease, transform 0.6s ease; /* Shortened duration */
+  transition: opacity 0.6s ease, transform 0.6s ease; 
 }
 
 .description.appear {
@@ -100,7 +100,7 @@ body {
   color: inherit; 
 }
 
-/* Mobile responsive styles */
+
 @media (max-width: 768px) {
   .about-me-card {
     width: calc(100% - 30px); 
@@ -108,8 +108,8 @@ body {
   }
 
   .description {
-    font-size: 20px; /* Adjust font size for mobile */
-    transform: translateX(0); /* Reset for mobile */
+    font-size: 20px; 
+    transform: translateX(0);
   }
 }
 

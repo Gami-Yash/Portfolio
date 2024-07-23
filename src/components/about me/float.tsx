@@ -35,11 +35,11 @@ export const cloudProps: Omit<ICloud, "children"> = {
 
 export const renderCustomIcon = (icon: SimpleIcon) => {
   const isJavaScriptIcon = icon.slug === "javascript";
-  const isNodeJsIcon = icon.slug === "node-dot-js"; // Use the correct slug for Node.js
+  const isNodeJsIcon = icon.slug === "node-dot-js"; 
 
   return renderSimpleIcon({
     icon,
-    bgHex: isJavaScriptIcon ? "#f7df1e" : icon.hex, // Yellow color for JavaScript icon
+    bgHex: isJavaScriptIcon ? "#f7df1e" : icon.hex, 
     fallbackHex: isJavaScriptIcon ? "#f7df1e" : icon.hex,
     minContrastRatio: 1,
     size: 42,
