@@ -56,8 +56,8 @@ const Home = () => {
     {
       title: 'User Management System',
       description: "Created a user management system using Python and Django, focusing on backend development. The system handles user authentication, roles, and permissions, ensuring secure and efficient management of user accounts.",
-      technologies: ['Python','Django','SQLite3'], 
-      githubLink: 'https://github.com/Gami-Yash/Django-Projects',
+      technologies: ['Python','Django','Postgres'], 
+      githubLink: 'https://github.com/Gami-Yash/UserManagement',
       imageUrl: FinalUser
     },
     {
