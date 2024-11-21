@@ -19,58 +19,66 @@ import Student from '../assets/Student.svg'
 import blog from '../assets/FinalBlog.svg'
 import ERP from '../assets/FinalERP.svg'
 import FinalEcom from '../assets/FinalEcom.svg'
+import Cloud from '../assets/cloud.svg'
 
 const Home = () => {
   const { theme } = useTheme();
-  const textClass = theme === 'dark' ? 'text-dark-theme' : 'text-light-theme'; 
+  const textClass = theme === 'dark' ? 'text-dark-theme' : 'text-light-theme';
 
   const projects = [
     {
+      title: "CloudVault",
+      description: "I developed CloudVault using Next.js, Appwrite, Tailwind, and ShadCN. Designed with a modern UI, it offers passwordless login and signup for a seamless user experience. The platform enables users to securely store, manage, and share files with others effortlessly, making it an ideal solution for efficient and secure file management.",
+      technologies: ["Next.js", "Appwrite", "Tailwind", "ShadCN"],
+      liveLink: "https://cloud-vault-red.vercel.app/",
+      imageUrl: Cloud,
+    },
+    {
       title: 'Library Management System',
       description: "I Developed a Library Management Application for Finals Odoo Combat 2024 using MERN stack. Focused on backend development, it efficiently manages book inventories, tracks borrowed items, and handles user accounts. The app features a user-friendly interface and robust data management for improved library operations.",
-      technologies: ['Node','React','Express','Figma','MongoDB'],
+      technologies: ['Node', 'React', 'Express', 'Figma', 'MongoDB'],
       githubLink: 'https://github.com/Gami-Yash/LibManagement',
       imageUrl: LibraryManagement,
     },
     {
       title: 'ERP- System',
       description: "Created an ERP system using the MERN stack, handling both frontend and backend development independently. The system integrates various business processes, manages data efficiently, and provides real-time insights with a streamlined interface and robust performance.",
-      technologies: ['Python', 'Django','Postgres','MERN'], 
+      technologies: ['Python', 'Django', 'Postgres', 'MERN'],
       githubLink: 'https://github.com/Gami-Yash/ERP-Main',
       imageUrl: ERP
     },
     {
       title: 'Crime Reporting System',
       description: "Built a real-time crime web app using the MERN stack, focusing on backend development and database creation. The app features live crime updates and efficient data management, providing a robust platform for monitoring and analyzing crime information.",
-      technologies: ['Node','React','Express','Figma','MongoDB'], 
+      technologies: ['Node', 'React', 'Express', 'Figma', 'MongoDB'],
       githubLink: 'https://github.com/Gami-Yash/CrimeReportingNew',
       imageUrl: CrimeReporting
     },
     {
       title: 'Blogging Platform',
       description: "Designed a blogging website using the MERN stack, handling backend and database creation. The site supports image uploads and features an integrated text editor for efficient post creation and management, offering a seamless blogging experience.",
-      technologies: ['Node','React','Express',,'MongoDB'], 
+      technologies: ['Node', 'React', 'Express', , 'MongoDB'],
       githubLink: 'https://github.com/Gami-Yash/Blog-App',
       imageUrl: blog
     },
     {
       title: 'User Management System',
       description: "Created a user management system using Python and Django, focusing on backend development. The system handles user authentication, roles, and permissions, ensuring secure and efficient management of user accounts.",
-      technologies: ['Python','Django','Postgres'], 
+      technologies: ['Python', 'Django', 'Postgres'],
       githubLink: 'https://github.com/Gami-Yash/UserManagement',
       imageUrl: FinalUser
     },
     {
       title: 'Student Management System',
       description: "Implemented a Student Management System using C++ and file management techniques to handle a large number of students. The system includes role-based authentication and various administrative features, ensuring efficient data management and streamlined operations.",
-      technologies: ['C++', 'File Management'], 
+      technologies: ['C++', 'File Management'],
       githubLink: 'https://github.com/Gami-Yash/StudentManagement',
       imageUrl: Student
     },
     {
       title: 'E-commerce Application',
       description: "Formed the frontend of an e-commerce application using Flutter, creating a responsive and user-friendly interface. The app features smooth navigation, product displays, and a seamless shopping experience for users.",
-      technologies: ['Dart','Flutter','FireBase','Android Studio'], 
+      technologies: ['Dart', 'Flutter', 'FireBase', 'Android Studio'],
       githubLink: 'https://github.com/Gami-Yash/eCommerce',
       imageUrl: FinalEcom
     },
@@ -86,21 +94,22 @@ const Home = () => {
         </div>
       </div>
       <div className='social-icons-container'>
-          <SocialIcons />
-        </div>
+        <SocialIcons />
+      </div>
       <div className="scroll-button-container">
         <ScrollButton />
       </div>
       <div className="projects-container">
         <h2 className={`projects-header ${textClass}`}>Projects</h2>
-        <div id="projects" className="projects-list">
+        <div className="projects-list">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
               title={project.title}
               description={project.description}
-              technologies={project.technologies} 
-              demoLink={project.githubLink}
+              technologies={project.technologies}
+              liveLink={project.liveLink}
+              githubLink={project.githubLink}
               imageUrl={project.imageUrl}
             />
           ))}
