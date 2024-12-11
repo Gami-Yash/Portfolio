@@ -32,6 +32,8 @@ const ContactMePage = () => {
     "androidstudio",
     "hostinger",
     'express',
+    'nextjs',
+    'springboot',
   ];
 
   // Inline styles
